@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTGeats - Authentic Indian Food</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+      <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <div class="logo">JTGeats</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <span class="search">🔍</span>
+          <span class="cart">🛒</span>
+        </div>
+      </div>
+  </nav>
+    <div class="container header-content">
+      <div class="header-text">
+        <h1>Authentic Home Food in India</h1>
+        <p>JTGeats is a courier service in which authentic home</p>
+        <p>cook food is delivered to a customer </p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search food you love.">
+          <button>Search</button>
+        </div>
+      </div>
+      <img src="assets/toppiccookingman.jpg" alt="Food Image" class="hero-img">
+    </div>
+  </header>
+  
+  <section class="home-kitchen">
+  <div class="container">
+    <h2>Home Kitchen</h2>
+    <div class="kitchen-grid">
+      <div class="kitchen-card">
+        <span class="discount">50%</span>
+        <img src="assets/pizza1.jpg" alt="Pizza">
+        <h3>Home made pizza</h3>
+        <p class="price">₹190</p>
+        <div class="details">
+          <span>⭐ 4.7</span>
+          <span>⏱ 30-35 min</span>
+        </div>
+      </div>
+
+      <div class="kitchen-card">
+        <img src="assets/pizza2.jpeg" alt="Pizza">
+        <h3>Home made pizza</h3>
+        <p class="price">₹130</p>
+        <div class="details">
+          <span>⭐ 3.7</span>
+          <span>⏱ 30-35 min</span>
+        </div>
+      </div>
+
+      
+      <div class="kitchen-card">
+        <img src="assets/pasta1.jpg" alt="Pasta">
+        <h3>Home made pasta</h3>
+        <p class="price">₹150</p>
+        <div class="details">
+          <span>⭐ 3.4</span>
+          <span>⏱ 20-25 min</span>
+        </div>
+      </div>
+      
+      <div class="kitchen-card">
+        <img src="assets/pasta2.jpeg" alt="Pasta">
+        <h3>Home made pasta</h3>
+        <p class="price">₹220</p>
+        <div class="details">
+          <span>⭐ 5.0</span>
+          <span>⏱ 35-40 min</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <section class="food-section">
+    <div class="container">
+      <h2>Popular Items</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div class="food-carousel">
+          <div class="food-card">
+            <img src="assets/Paneer-Tikka.jpg" alt="Food 1">
+            <h3>Paneer Tikka</h3>
+            <p class="price">₹250</p>
+            <p>Spicy grilled paneer served with chutney.</p>
+            <button class="add-cart">Add to Cart</button>
+          </div>
+          <div class="food-card">
+            <img src="assets/butter naan.jpg" alt="Food 2">
+            <h3>Butter Naan</h3>
+            <p class="price">₹60</p>
+            <p>Soft butter naan fresh from the tandoor.</p>
+            <button class="add-cart">Add to Cart</button>
+          </div>
+          <div class="food-card">
+            <img src="assets/tandoori chicken.jpg" alt="Food 3">
+            <h3>Tandoori Chicken</h3>
+            <p class="price">₹490</p>
+            <p>Spicy grilled chicken served with chutney.</p>
+            <button class="add-cart">Add to Cart</button>
+          </div>
+          <div class="food-card">
+            <img src="assets/chicken curry.jpg" alt="Food 4">
+            <h3>Chicken Curry</h3>
+            <p class="price">₹350</p>
+            <p>Rich and flavorful traditional chicken curry.</p>
+            <button class="add-cart">Add to Cart</button>
+          </div>
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+      <button id="requestDishBtn" class="request-btn">Request Dish</button>
+    </div>
+  </section>
+
+  <div id="requestModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Request a Dish</h3>
+      <input type="text" placeholder="Enter dish name">
+      <div class="modal-actions">
+        <button id="cancelRequest">Cancel</button>
+        <button id="submitRequest">Submit Request</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="video-section">
+    <h2>We are providing best</h2>
+    <h1>home cooked food delivery service.</h1>
+    <p class="sub-text">
+      Away from home and craving the tasty homemade recipes?<br>
+      Choose from a selection of our delicious home cooked dishes
+    </p>
+    <div class="video-wrapper">
+      <video id="promoVideo" src="assets/food video.mp4" poster="assets/thumbnail pic.jpg" width="600"></video>
+      <div id="playOverlay" class="play-overlay">▶</div>
+    </div>
+  </section>
+<!--
+  <section class="highlight">
+    <h2>Our Special Dish</h2>
+    <p>Try our chef’s special made with authentic spices and love.</p>
+    <img src="assets/special.jpg" alt="Special Dish">
+  </section>
+-->
+  <section class="contact-section">
+  <div class="container contact-content">
+    <div class="contact-form">
+      <h2>Do you have a question or want to become a seller?</h2>
+      <p>Fill this form and our manager will contact you next 48 hours.</p>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your e-mail">
+      <textarea placeholder="Your message"></textarea>
+      <button class="submit-btn">Submit</button>
+    </div>
+    <div class="contact-image">
+      <img src="assets/delivery boy.jpg" alt="Delivery Boy">
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">JTGeats</div>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="#">🌐</a>
+        <a href="#">#️⃣</a>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
